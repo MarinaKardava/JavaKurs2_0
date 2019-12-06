@@ -6,16 +6,16 @@ import java.util.*;
 
 public class Task4_1 {
     public static void main(String[] args) {
-        int n =10;
+        int n = 20;
         int arr[] =  new int[n];
-        Scanner in =  new Scanner( System.in);
-        for( int i= 0; i< n; i++){
-            System.out.println("Введите чисо "+i+": ");
-            arr [i] = in.nextInt();
+        Scanner in =  new Scanner(System.in);
+        for( int i = 0; i < n; i++){
+            System.out.println("Введите числа от -10 до 10. \nВведите чисо "+ (i + 1) +": ");
+            arr[i] = in.nextInt();
         }
         System.out.print("Введенный массив: ");
-        for( int i= 0; i< n; i++){
-            System.out.print(arr[i]+" ");
+        for( int i = 0; i < n; i++){
+            System.out.print(arr[i] + " ");
         }
 
         int max =  arr[0], min =  arr[0];
