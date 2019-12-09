@@ -13,4 +13,8 @@ public class Jellybean extends Sweets{
     public void setColor(String color) {
         this.color = color;
     }
+    @Override
+    public String toString () {
+        return "Мермелад " + super.toString() + ", цвет: " + color;
+    }
 }

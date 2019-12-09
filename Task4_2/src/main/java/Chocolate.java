@@ -12,4 +12,8 @@ public class Chocolate extends Sweets {
     public void setTaste(String taste) {
         this.taste = taste;
     }
+    @Override
+    public String toString () {
+        return "Шоколад " + super.toString() + ", со вкусом " + taste;
+    }
 }

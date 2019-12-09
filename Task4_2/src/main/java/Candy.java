@@ -1,9 +1,9 @@
 public class Candy extends Sweets {
 
     String type;
-    public Candy(String name, int weight, double price, String uniqueParameter) {
+    public Candy(String name, int weight, double price, String type) {
         super(name, weight, price);
-        this.type = uniqueParameter;
+        this.type = type;
     }
 
     public String getType() {
@@ -12,5 +12,9 @@ public class Candy extends Sweets {
 
     public void setType(String type) {
         this.type = type;
+    }
+    @Override
+    public String toString () {
+        return "Конфеты " + super.toString() + ", вид: " + type;
     }
 }
